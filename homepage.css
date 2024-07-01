@@ -1,0 +1,148 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.app-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px;
+}
+
+header h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+main {
+    padding: 20px;
+}
+
+.note-input, .note-search {
+    margin-bottom: 20px;
+}
+
+.note-input form {
+    display: grid;
+    gap: 15px;
+}
+
+.note-input input, .note-input textarea, .note-input select, .note-search input, .note-search button {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.note-input input:focus, .note-input textarea:focus, .note-input select:focus, .note-search input:focus {
+    outline: none;
+    border-color: #FFC107;
+}
+
+.note-input button, .note-search button {
+    background-color: #FFC107;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.note-input button:hover, .note-search button:hover {
+    background-color: #ff9800;
+}
+
+.note-display {
+    display: grid;
+    gap: 20px;
+}
+
+.note-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+}
+
+.note-card .emoji {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.note-card .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.note-card .card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.note-card .card-date {
+    font-size: 12px;
+    color: #666;
+}
+
+.note-card .card-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.note-card .card-actions .edit, .note-card .card-actions .remove {
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.note-card .card-actions .edit {
+    background-color: #e63946;
+}
+
+.note-card .card-actions .remove {
+    background-color: #e63946;
+}
+
+.note-card .card-actions .edit:hover {
+    background-color: #b02a37
+}
+
+.note-card .card-actions .remove:hover {
+    background-color: #b02a37;
+}

@@ -1,0 +1,153 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding:20px;
+    background-color: white;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #35a800;
+}
+
+.logo-highlight {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff8c00;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #00a859;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.auth-buttons .signup {
+    background-color: #ff8c00;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.auth-buttons .signup:hover {
+    background-color: #e67e00;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 150px;
+    border-radius: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+.link-icon {
+    background-image: url('link-icon.svg');
+}
+
+.text-icon {
+    background-image: url('text-icon.svg');
+}
+
+.pages-icon {
+    background-image: url('pages-icon.svg');
+}
+
+.text {
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #000000;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0 0;
+    color: #555555;
+}
+
+.continue-button {
+    background-color: #FFC107;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.continue-button:hover {
+    background-color: #ff9800;
+}
