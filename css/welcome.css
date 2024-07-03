@@ -61,7 +61,6 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
 }
-
 .auth-buttons .login,
 .auth-buttons .signup {
     text-decoration: none;
@@ -69,7 +68,6 @@ nav ul li a:hover {
     font-weight: 500;
     margin-left: 15px;
 }
-
 .auth-buttons .signup {
     background-color: #e63946;
     color: white;
