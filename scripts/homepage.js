@@ -21,6 +21,7 @@ const moods = {
     cry: "sad-cry",
 };
 
+
 for (let mood in moods) {
     let option = document.createElement("option");
     option.value = moods[mood];
