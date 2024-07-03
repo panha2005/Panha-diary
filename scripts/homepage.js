@@ -33,6 +33,7 @@ cardContainer.addEventListener("click", handleCardActions);
 clearButton.addEventListener("click", removeAllNotes);
 searchInput.addEventListener("input", filterNotes);
 
+
 // add a new note
 function addNote (e) {
     e.preventDefault();
