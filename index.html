@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's New in Notes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/welcome.css">
 </head>
+
 <body>
+    <!-- start header -->
     <header>
         <div class="logo">
-            <span class="logo-text">Dairy</span><span class="logo-highlight">Plus</span>
+            <span class="logo-text">Me</span><span class="logo-highlight">+</span>
         </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About.Us</a></li>
-                <li><a href="#">Our.App</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our App</a></li>
                 <li><a href="#">Contacts</a></li>
                 <li><a href="#">Pricing</a></li>
             </ul>
         </nav>
         <div class="auth-buttons">
-            <a href="#" class="login">Log in</a>
-            <a href="#" class="signup">Sign up</a>
+            <a href="./pages/signin.html" class="login">Log in</a>
+            <a href="./pages/signup.html" class="signup">Sign up</a>
         </div>
     </header>
+    <!-- end header -->
+
+    <!-- start main content -->
     <div class="container">
-        <h1>What's New in Notes</h1>
+        <h1>What's New in Dairy</h1>
         <div class="feature">
             <div class="icon link-icon"></div>
             <div class="text">
@@ -48,8 +54,10 @@
                 <p>Continue your note in a Pages document for more layout and formatting options.</p>
             </div>
         </div>
-        <button class="continue-button"><a href="./homepage.html">Continue</a></button>
+        <button class="continue-button"><a href="./pages/homepage.html">Continue</a></button>
     </div>
-    <script src="script.js"></script>
+    <!-- end main content -->
+     
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

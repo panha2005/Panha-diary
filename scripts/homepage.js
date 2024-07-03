@@ -8,6 +8,7 @@ const cardContainer = document.querySelector("#card_container");
 const clearButton = document.querySelector("#clear_all");
 const searchInput = document.querySelector("#search");
 
+// mood options
 const moods = {
     smile: "smile",
     flushed: "flushed",
@@ -32,6 +33,7 @@ cardContainer.addEventListener("click", handleCardActions);
 clearButton.addEventListener("click", removeAllNotes);
 searchInput.addEventListener("input", filterNotes);
 
+// add a new note
 function addNote (e) {
     e.preventDefault();
     const title = titleInput.value;
@@ -55,6 +57,7 @@ function addNote (e) {
     form.reset();
 }
 
+// handle card action
 function handleCardActions(e) {
     if (e.target.closest(".remove")) {
         const card = e.target.closest(".note-card");
@@ -76,11 +79,13 @@ function handleCardActions(e) {
     }
 }
 
+// removed all note
 function removeAllNotes() {
     cardContainer.innerHTML = "";
     localStorage.clear();
 }
 
+// filter note
 function filterNotes() {
     const searchValue = searchInput.value.toLowerCase();
     document.querySelectorAll(".note-card").forEach(card => {
@@ -89,17 +94,20 @@ function filterNotes() {
     });
 }
 
+// store note in local storage
 function storeNoteInLocalStorage(note) {
     const notes = JSON.parse(localStorage.getItem("notes")) || [];
     notes.push(note);
     localStorage.setItem("notes", JSON.stringify(notes));
 }
 
+// get note from local storage
 function getNotes() {
     const notes = JSON.parse(localStorage.getItem("notes")) || [];
     notes.forEach(createNoteCard);
 }
 
+// create a note card
 function createNoteCard(note) {
     const card = document.createElement("div");
     card.className = "note-card";
@@ -116,6 +124,7 @@ function createNoteCard(note) {
     cardContainer.appendChild(card);
 }
 
+// removed note from local storage
 function removeNoteFromLocalStorage(title) {
     let notes = JSON.parse(localStorage.getItem("notes")) || [];
     notes = notes.filter(note => note.title !== title);

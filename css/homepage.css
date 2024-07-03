@@ -21,7 +21,7 @@ body {
     max-width: 600px;
     overflow: hidden;
 }
-
+/* header stayle */
 header {
     color: black;
     padding: 20px;
@@ -38,7 +38,7 @@ header h1 {
 main {
     padding: 20px;
 }
-
+/* note input and search style */
 .note-input, .note-search {
     margin-bottom: 20px;
 }
@@ -58,11 +58,11 @@ main {
 
 .note-input input:focus, .note-input textarea:focus, .note-input select:focus, .note-search input:focus {
     outline: none;
-    border-color: #FFC107;
+    border-color: #e63946;
 }
 
 .note-input button, .note-search button {
-    background-color: #FFC107;
+    background-color: #e63946;
     color: #ffffff;
     cursor: pointer;
     border: none;
@@ -73,9 +73,9 @@ main {
 }
 
 .note-input button:hover, .note-search button:hover {
-    background-color: #ff9800;
+    background-color: #b02a37;
 }
-
+/* note display style */
 .note-display {
     display: grid;
     gap: 20px;
@@ -145,4 +145,17 @@ main {
 
 .note-card .card-actions .remove:hover {
     background-color: #b02a37;
+}
+.back-button {
+    background-color: transparent;
+    border: none;
+    color: #e63946;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+.back-button a {
+    text-decoration: none;
+    color: #e63946;
 }

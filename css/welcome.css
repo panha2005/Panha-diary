@@ -8,7 +8,7 @@ body {
     height: 100vh;
     background-color: #ffffff;
 }
-
+/* header style */
 header {
     display: flex;
     justify-content: space-between;
@@ -27,13 +27,13 @@ header {
 .logo-text {
     font-size: 24px;
     font-weight: bold;
-    color: #35a800;
+    color: #e63946;
 }
 
 .logo-highlight {
     font-size: 24px;
     font-weight: bold;
-    color: #ff8c00;
+    color: #233c78;
 }
 
 nav ul {
@@ -54,9 +54,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00a859;
+    color: #b02a37;
 }
-
+/* button style */
 .auth-buttons {
     display: flex;
     align-items: center;
@@ -71,16 +71,16 @@ nav ul li a:hover {
 }
 
 .auth-buttons .signup {
-    background-color: #ff8c00;
+    background-color: #e63946;
     color: white;
     padding: 8px 15px;
     border-radius: 6px;
 }
 
 .auth-buttons .signup:hover {
-    background-color: #e67e00;
+    background-color: #b02a37;
 }
-
+/* main content style */
 .container {
     text-align: center;
     background-color: #ffffff;
@@ -94,7 +94,7 @@ h1 {
     font-size: 36px;
     margin-bottom: 40px;
 }
-
+/* feature section style */
 .feature {
     display: flex;
     align-items: center;
@@ -135,9 +135,9 @@ p {
     margin: 5px 0 0;
     color: #555555;
 }
-
+/* continue button style */
 .continue-button {
-    background-color: #FFC107;
+    background-color: #e63946;
     border: none;
     color: white;
     padding: 15px 30px;
@@ -147,7 +147,10 @@ p {
     transition: background-color 0.3s;
     margin-top: 20px;
 }
-
+.continue-button a {
+    text-decoration: none;
+    color: white;
+}
 .continue-button:hover {
-    background-color: #ff9800;
+    background-color: #b02a37;
 }
