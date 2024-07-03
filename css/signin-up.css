@@ -1,0 +1,131 @@
+/* Base styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/* Container styles */
+.container {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+/* Form container styles */
+.form-container {
+    border-radius: 15px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+h3 {
+    font-size: 1em;
+    color: rgb(34, 21, 21);
+    margin-bottom: 25px;
+}
+
+/* Input field styles */
+.input-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-field input {
+    width: 85%;
+    padding: 12px 15px 12px 40px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-field input:focus {
+    outline: none;
+    border-color: #e63946;
+}
+
+/* Placeholder styles */
+.input-field input::placeholder {
+    color: #3c1717;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.input-field input:focus::placeholder {
+    color: #e63946;
+}
+
+.input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1a1011;
+}
+
+/* Button styles */
+button {
+    background-color: #e63946;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #b02a37;
+}
+
+
+/* Forgot password link */
+.forgot-container {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.forgot-container a {
+    color: #ff5e62;
+    text-decoration: none;
+}
+
+.forgot-container a:hover {
+    text-decoration: underline;
+}
+
+/* General link styles */
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+a {
+    color:#ff5e62;
+    text-decoration: none;
+}
+.login-button a{
+    color: #ffffff;
+   
+}
+a:hover {
+    text-decoration: underline;
+}

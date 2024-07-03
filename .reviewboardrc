@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "https://review.clp.kr/"
+REPOSITORY = "HexCode/Sovan-Panaha/Diary-Web"
+REPOSITORY_TYPE = "git"
+BRANCH = "feature/signup-page"
+LAND_DEST_BRANCH = "feature/signup-page"
