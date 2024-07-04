@@ -35,7 +35,7 @@ clearButton.addEventListener("click", removeAllNotes);
 searchInput.addEventListener("input", filterNotes);
 
 
-// add a new note
+// add a new note to local storage 
 function addNote (e) {
     e.preventDefault();
     const title = titleInput.value;
@@ -59,7 +59,8 @@ function addNote (e) {
     form.reset();
 }
 
-// handle card action
+// handle card action on note card 
+// allows edit and delete note base on user interaction.
 function handleCardActions(e) {
     if (e.target.closest(".remove")) {
         const card = e.target.closest(".note-card");
