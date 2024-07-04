@@ -59,6 +59,7 @@ function addNote (e) {
     form.reset();
 }
 
+
 // handle card action on note card 
 // allows edit and delete note base on user interaction.
 function handleCardActions(e) {
